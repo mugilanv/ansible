@@ -1,0 +1,7 @@
+---
+- hosts: 192.168.56.20
+  tasks:
+  - name: install the latest version of Apache
+    yum:
+      name: httpd
+      state: latest
